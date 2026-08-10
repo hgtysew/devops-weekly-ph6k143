@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>缓存穿透与击穿的区分处理 — DevOps Weekly</title>
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../index.html">DevOps Weekly</a>
+  </header>
+  <main class="content">
+    <h1>缓存穿透与击穿的区分处理</h1>
+    <p class="meta"><time datetime="2026-08-10">2026-08-10</time></p>
+    <article>
+<p>穿透是查询不存在的数据打穿到 DB；击穿是热点 key 过期瞬间流量打到 DB。</p><p>穿透可用空值缓存或布隆过滤器；击穿可用互斥重建或逻辑过期。</p><p>先用监控确认是哪一种，再选策略，避免盲目加锁。</p>
+    </article>
+    <p><a href="../index.html">← 返回首页</a></p>
+  </main>
+  <footer class="site-footer"><p>DevOps Weekly</p></footer>
+</body>
+</html>
