@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>准备工作：确认需求与域名备案 — DevOps Weekly</title>
+  <meta name="description" content="准备工作：确认需求与域名备案 &mdash; CI/CD、容器与可观测性笔记">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="../index.html">DevOps Weekly</a>
+  </header>
+  <main class="content">
+    <h1>准备工作：确认需求与域名备案</h1>
+    <p class="meta"><time datetime="2026-08-12">2026-08-12</time></p>
+    <article>
+<h2>准备工作：确认需求与域名备案</h2>
+<p>在辽宁沈阳申请企业网站前，建议先明确网站的核心用途——是用于品牌展示、产品宣传，还是线上业务办理。不同用途对网站功能、服务器配置的要求不同。同时，根据中国互联网管理要求，企业网站需要完成<strong>ICP备案</strong>，备案主体必须与营业执照上的企业名称一致。如果准备使用国内服务器，备案通常需要10到20个工作日，建议提前规划时间。</p>
+
+<h2>第一步：注册域名</h2>
+<p>域名是网站的网络地址，一般选择<strong>.com</strong>、<strong>.cn</strong>或<strong>.com.cn</strong>等常见后缀。申请途径包括阿里云、腾讯云、西部数码等正规域名注册商。注册时需提供企业营业执照扫描件以及经办人身份信息。建议域名尽可能简短、与企业名称或品牌相关，并一次性注册多年，避免后期续费遗忘。</p>
+
+<h2>第二步：选择服务器或虚拟主机</h2>
+<p>根据网站规模和预算选择合适的主机方案：</p>
+<ul>
+  <li><strong>虚拟主机</strong>：适合展示型小网站，成本低，无需自行维护服务器。</li>
+  <li><strong>云服务器（ECS）</strong>：适合有独立部署需求或访问量较大的企业，可灵活配置CPU、内存和带宽。</li>
+  <li><strong>企业版主机</strong>：部分服务商提供针对企业的托管型方案，包含基础安全服务和备份。</li>
+</ul>
+<p>沈阳本地机房或国内主流云服务商均可选择，注意确认服务商是否支持网站备案流程。</p>
+
+<h2>第三步：网站设计与开发</h2>
+<p>企业网站建设通常有两条路径：</p>
+<ol>
+  <li><strong>使用建站工具</strong>：如凡科建站、上线了等平台，提供模板化操作，适合无技术团队的企业，一般一天内可完成基础搭建。</li>
+  <li><strong>定制开发</strong>：委托沈阳本地网络公司或自由开发者进行UI设计和前后端开发。这种方式更能体现企业特色，但周期较长，费用在几千元到数万元不等。</li>
+</ol>
+<p>无论选择哪种方式，建议在合同中明确网站功能清单、交付时间、后期维护责任以及源代码归属权。</p>
+
+<h2>第四步：网站备案（ICP备案）</h2>
+<blockquote>
+  <p>备案是上线前的必要环节，未备案的网站无法使用国内服务器正常访问。</p>
+</blockquote>
+<p>备案流程通常由服务器提供商代为提交。企业需要准备营业执照副本扫描件、法人身份证扫描件、网站负责人身份证及近景拍照（部分地区需幕布背景）。登录服务商的备案系统填写信息，提交后等待通信管理局审核。审核通过后会获得备案号，需按要求放置在网站页面底部。</p>
+
+<h2>第五步：域名解析与网站上线</h2>
+<p>备案通过后，将域名解析到服务器的IP地址。具体操作是在域名管理后台添加解析记录，类型选择<strong>A记录</strong>（指向IP）或<strong>CNAME记录</strong>（指向别名）。解析生效后，将网站程序文件上传至服务器根目录，配置好数据库信息即可正常访问。首次上线建议进行全面的功能测试，包括页面加载速度、表单提交、移动端适配等。</p>
+
+<h2>常见问题与建议</h2>
+<ul>
+  <li><strong>沈阳本地是否有特殊政策？</strong> 企业网站在全国范围内备案要求一致，沈阳本地无额外门槛，但建议优先选择服务口碑较好的服务商。</li>
+  <li><strong>网站安全如何保障？</strong> 为服务器配置SSL证书（实现HTTPS访问），定期更新网站程序及插件，设置复杂的管理员密码，并定期备份数据。</li>
+  <li><strong>后续维护要注意什么？</strong> 建议保留技术对接人联系方式，定期更新企业信息、产品内容，保持网站活跃度。</li>
+</ul>
+<p>通过以上步骤，沈阳的企业用户可以顺利搭建属于自己的官方网站。如果在操作过程中遇到具体技术问题，可参考各大云服务商的官方文档，或咨询专业的网络服务公司。</p>
+<p class="internal-links">相关文章：<a href="post-2026-08-11-54338.html">认清需求，避免盲目跟风</a> · <a href="bu-tong-ping-tai-de-bao-jia-luo-ji-yu-cha-yi.html">不同平台的报价逻辑与差异</a> · <a href="post-2026-08-11-42223.html">需求诊断与现状摸底：改造升级的起点</a> · <a href="zhun-bei-gong-zuo-que-ren-xu-qiu-yu-yu-ming-bei-an.html">准备工作：确认需求与域名备案</a></p>
+    </article>
+    <p><a href="../index.html">← 返回首页</a></p>
+  </main>
+  <footer class="site-footer"><p>DevOps Weekly</p></footer>
+</body>
+</html>
